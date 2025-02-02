@@ -1,12 +1,11 @@
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
-import logo from '../assets/img/logo.svg';
+// Import the new logo (jubylogo-.png)
+import jubyLogo from '../assets/img/jubylogo-.png'; // Update the logo import path
 import { FaInstagram, FaLinkedin, FaBehance } from 'react-icons/fa'; // Importing social icons from react-icons
 
 import { HashLink } from 'react-router-hash-link';
-import {
-  BrowserRouter as Router
-} from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 
 export const NavBar = () => {
 
@@ -36,7 +35,8 @@ export const NavBar = () => {
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
           <Navbar.Brand href="/">
-            <img src={logo} alt="Logo" />
+            {/* Update to use the new logo */}
+            <img src={jubyLogo} alt="Juby Logo" style={{ maxWidth: '150px' }} />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"></span>
@@ -48,17 +48,17 @@ export const NavBar = () => {
               <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
             </Nav>
             <span className="navbar-text">
-            <div className="social-icon">
-              <a href="https://www.instagram.com/ju0_o5?igsh=MXMwMnl5NjlsazRtdg==" target="_blank" rel="noopener noreferrer">
-                <FaInstagram size={30} />
-              </a>
-              <a href="https://www.linkedin.com/in/juby-mary-thomas?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">
-                <FaLinkedin size={30} />
-              </a>
-              <a href="https://www.behance.net/jubymthomas" target="_blank" rel="noopener noreferrer">
-                <FaBehance size={30} />
-              </a>
-            </div>
+              <div className="social-icon">
+                <a href="https://www.instagram.com/ju0_o5?igsh=MXMwMnl5NjlsazRtdg==" target="_blank" rel="noopener noreferrer">
+                  <FaInstagram size={30} />
+                </a>
+                <a href="https://www.linkedin.com/in/juby-mary-thomas?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">
+                  <FaLinkedin size={30} />
+                </a>
+                <a href="https://www.behance.net/jubymthomas" target="_blank" rel="noopener noreferrer">
+                  <FaBehance size={30} />
+                </a>
+              </div>
 
               <HashLink to='#connect'>
                 <button className="vvd"><span>Let’s Connect</span></button>

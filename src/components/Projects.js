@@ -44,6 +44,14 @@ export const Projects = () => {
                             <div style={styles.overlay}>
                               <p style={styles.overlayText}>{project.title}</p>
                               <p style={styles.overlayDescription}>{project.description}</p>
+                              <a
+                                href={project.behanceUrl}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                style={styles.behanceLink}
+                              >
+                                {project.description}
+                              </a>
                             </div>
                           </div>
                         </div>
@@ -164,6 +172,19 @@ const styles = {
     lineHeight: "1.4",
     maxWidth: "80%",
     color: "#ddd",
+  },
+  behanceLink: {
+    fontSize: "1.2rem",
+    color: "#9b4dff",
+    marginTop: "15px",
+    textDecoration: "none",
+    fontWeight: "bold",
+    opacity: "0",
+    transform: "translateY(20px)",
+    transition: "opacity 0.3s ease-in-out, transform 0.3s ease-in-out",
+    "&:hover": {
+      textDecoration: "underline",
+    },
   },
   backgroundImage: {
     position: "absolute",

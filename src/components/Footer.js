@@ -1,5 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
-import logo from "../assets/img/logo.svg";
+// Import the new logo (jubylogo-.png)
+import jubyLogo from "../assets/img/jubylogo-.png"; // Update the logo import path
 import { FaInstagram, FaLinkedin, FaBehance } from 'react-icons/fa'; // Importing social icons from react-icons
 
 export const Footer = () => {
@@ -9,7 +10,8 @@ export const Footer = () => {
         <Row className="align-items-center">
           {/* Logo Section */}
           <Col size={12} sm={6} className="text-center text-sm-start mb-3">
-            <img src={logo} alt="Logo" style={{ maxWidth: '150px' }} />
+            {/* Update to use the new logo */}
+            <img src={jubyLogo} alt="Juby Logo" style={{ maxWidth: '150px' }} />
           </Col>
 
           {/* Social Icons and Copyright Section */}
@@ -84,7 +86,7 @@ export const Footer = () => {
             {/* Copyright Text */}
             <div style={{ marginTop: '20px' }}>
               <p style={{ fontSize: '0.9rem', color: '#fff', marginTop: '0', marginBottom: '0' }}>
-              ©Copyright 2025. All Rights Reserved kynu
+                ©Copyright 2025. All Rights Reserved kynu
               </p>
             </div>
           </Col>
@@ -100,4 +102,5 @@ export const Footer = () => {
       `}</style>
     </footer>
   );
-}
+};
+
