@@ -36,7 +36,7 @@ export const NavBar = () => {
         <Container>
           <Navbar.Brand href="/">
             {/* Update to use the new logo */}
-            <img src={jubyLogo} alt="Juby Logo" style={{ maxWidth: '150px' }} />
+            <img src={jubyLogo} alt="Juby Logo" style={{ maxWidth: '450px' }} />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"></span>

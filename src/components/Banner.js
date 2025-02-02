@@ -56,7 +56,7 @@
                 {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                   <span className="tagline">Welcome to my Portfolio</span>
-                  <h1>{`Hi! I'm Juby Mery`}  <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
+                  <h1>{`Hi! I'm Juby Mary`}  <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
                     <p>Passionate about crafting clean, intuitive, and user-friendly designs. With a focus on user research, wireframing, and prototyping, I create digital experiences that align with both user needs and business goals.</p>
                     <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
                 </div>}
