@@ -9,7 +9,7 @@ export const Projects = () => {
 
   const projects = [
     {
-      title: "View Full Projects",
+      title: "Visit Projects",
       description: "Explore more on Behance →",
       imgUrl: projImg1,
       behanceUrl: "https://www.behance.net/jubymthomas",
@@ -47,8 +47,15 @@ export const Projects = () => {
           </Col>
         </Row>
       </Container>
+
       <div className="background-glitter"></div>
-      <img className="background-image-right" src={colorSharp2} alt="Decoration" style={styles.backgroundImage} />
+
+      <img
+        className="background-image-right"
+        src={colorSharp2}
+        alt="Decoration"
+        style={styles.backgroundImage}
+      />
     </section>
   );
 };
@@ -88,11 +95,12 @@ const styles = {
     position: "absolute",
     bottom: "0",
     right: "0",
-    zIndex: "-1",
+    zIndex: "-1",  // Make sure the background image stays behind other content
     width: "50%",
     opacity: "0.15",
     transition: "opacity 0.3s ease-in-out",
     animation: "backgroundZoom 3s infinite ease-in-out",
+    cursor: "pointer",  // Make the image clickable
   },
 };
 
