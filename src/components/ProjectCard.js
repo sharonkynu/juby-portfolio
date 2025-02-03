@@ -19,3 +19,5 @@ export const ProjectCard = ({ title, description, imgUrl, behanceUrl }) => {
     </Col>
   );
 };
+
+

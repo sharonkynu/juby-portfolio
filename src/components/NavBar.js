@@ -52,7 +52,7 @@ export const NavBar = () => {
                 <a href="https://www.instagram.com/ju0_o5?igsh=MXMwMnl5NjlsazRtdg==" target="_blank" rel="noopener noreferrer">
                   <FaInstagram size={30} />
                 </a>
-                <a href="https://www.linkedin.com/in/juby-mary-thomas?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/jubymthomas" target="_blank" rel="noopener noreferrer">
                   <FaLinkedin size={30} />
                 </a>
                 <a href="https://www.behance.net/jubymthomas" target="_blank" rel="noopener noreferrer">
