@@ -51,13 +51,15 @@ export const Projects = () => {
                         ? "linear-gradient(135deg, rgba(155, 77, 255, 0.9), rgba(106, 0, 244, 0.9))"
                         : "rgba(255, 255, 255, 0.1)",
                       backdropFilter: "blur(10px)",
+                      cursor: "pointer", // This makes it clear the project is clickable
+                      border: hovered ? "2px solid rgba(155, 77, 255, 0.8)" : "none", // Adds a border effect on hover
                     }}
                   >
                     <motion.div
                       initial={{ rotateX: 0, rotateY: 0 }}
                       animate={{ rotateX: hovered ? 10 : 0, rotateY: hovered ? 10 : 0 }}
                       transition={{ duration: 0.3 }}
-                      style={styles.textOverlay} // Apply overlay here
+                      style={styles.textOverlay}
                     >
                       <h4 style={styles.boxTitle}>{project.title}</h4>
                       <span style={styles.boxDescription}>{project.description}</span>
